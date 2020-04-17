@@ -1,3 +1,6 @@
+@import "./variables";
+@import "./menu";
+
 @font-face {
   font-family: "Red Hat Display";
   src: url("../assets/fonts/RedHatDisplay-Regular.ttf");
@@ -5,4 +8,8 @@
 
 body {
   font-family: "Red Hat Display", Arial, sans-serif;
+}
+
+svg {
+  fill: $svg-color;
 }
