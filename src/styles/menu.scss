@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 550px;
-  padding: 0;
+  padding: 10px 0 0;
 
   &::after {
     content: "";
@@ -14,6 +14,8 @@
     background-image: url("https://picsum.photos/1920/550?grayscale&blur=2");
     background-size: cover;
     background-position: center;
+
+    opacity: 0.3;
   }
 }
 
@@ -33,4 +35,14 @@
 
 .menu__btn {
   padding: 0;
+
+  svg {
+    height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
 }
