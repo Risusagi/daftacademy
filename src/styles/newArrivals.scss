@@ -1,0 +1,26 @@
+.new h2 {
+  margin: 5rem 0;
+  font-size: 2.25rem;
+}
+
+.new__card {
+  border: none;
+}
+
+.new__product-name {
+  display: block;
+  color: $product-name-color;
+
+  &:hover {
+    color: $product-name-color;
+  }
+}
+
+.new__button {
+  $mt: 2rem;
+  $mb: $mt + 1.25rem;
+  width: 136px;
+  height: 3em;
+  margin: $mt 0 $mb 0;
+  border-radius: 0;
+}
