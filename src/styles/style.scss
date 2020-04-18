@@ -7,10 +7,37 @@
   src: url("../assets/fonts/RedHatDisplay-Regular.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Red Hat Display", Arial, sans-serif;
 }
 
 svg {
   fill: $svg-color;
+}
+
+.scroll-to-top {
+  position: sticky;
+  display: inline-block;
+  bottom: 2.75rem;
+  margin-left: 100%;
+  transform: translateX(-50%);
+
+  &.hidden {
+    display: none;
+  }
+
+  svg {
+    width: $new-padding;
+    height: $new-padding;
+    stroke: $svg-color;
+    stroke-width: 1;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+    fill: none;
+    color: $svg-color;
+  }
 }
