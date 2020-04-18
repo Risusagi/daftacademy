@@ -18,10 +18,10 @@
   </head>
 
   <body>
-    <header class="container-fluid">
-      <nav class="menu row navbar navbar-expand-md bg-light">
+    <header class="header container-fluid">
+      <nav class="menu row navbar navbar-expand-md">
         <a
-          class="navbar-brand mr-0 order-2 col-6 col-md-2 text-center"
+          class="navbar-brand mr-0 order-2 col-6 col-md-2 text-center align-self-start"
           href="#"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="117" height="22">
@@ -42,15 +42,15 @@
             aria-label="Toggle Navigation"
           >
             <svg
-              class="menu__icon navbar-toggler-icon"
-              role="img"
+              class="navbar-toggler-icon"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              aria-labelledby="hamburgerIconTitle"
+              width="18"
+              height="16"
             >
-              <path d="M6 7L18 7M6 12L18 12M6 17L18 17"></path>
+              <path
+                fill-rule="evenodd"
+                d="M17 2H1c-.552 0-1-.448-1-1s.448-1 1-1h16c.552 0 1 .448 1 1s-.448 1-1 1zM1 7h12c.552 0 1 .448 1 1s-.448 1-1 1H1c-.552 0-1-.448-1-1s.448-1 1-1zm0 7h16c.552 0 1 .448 1 1s-.448 1-1 1H1c-.552 0-1-.448-1-1s.448-1 1-1z"
+              />
             </svg>
           </button>
 
@@ -75,7 +75,9 @@
           </div>
         </div>
 
-        <div class="order-3 col-3 col-md-5 d-flex justify-content-end">
+        <div
+          class="order-3 col-3 col-md-5 d-flex justify-content-end align-self-start"
+        >
           <a class="mr-3" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17">
               <path
@@ -95,6 +97,7 @@
           </a>
         </div>
       </nav>
+      <!-- <img class="banner" src="https://placekitten.com/1920/550" alt="banner" /> -->
     </header>
 
     <script
