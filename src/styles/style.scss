@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./menu";
-@import "newArrivals";
+@import "./newArrivals";
+@import "./collections";
 
 @font-face {
   font-family: "Red Hat Display";
@@ -16,7 +17,7 @@ body {
 }
 
 svg {
-  fill: $svg-color;
+  fill: $main-color;
 }
 
 .main-wrapper {
@@ -24,6 +25,9 @@ svg {
 
   img {
     border-radius: 0;
+
+    // would be deleted after loading real images
+    opacity: 0.1;
   }
 }
 
@@ -39,11 +43,11 @@ svg {
   svg {
     width: $scroll-to-top-size;
     height: $scroll-to-top-size;
-    stroke: $svg-color;
+    stroke: $main-color;
     stroke-width: 1;
     stroke-linecap: square;
     stroke-linejoin: miter;
     fill: none;
-    color: $svg-color;
+    color: $main-color;
   }
 }
