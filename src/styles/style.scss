@@ -19,20 +19,26 @@ svg {
   fill: $svg-color;
 }
 
+.main-wrapper {
+  padding: 0 $scroll-to-top-size + 1rem;
+
+  img {
+    border-radius: 0;
+  }
+}
+
 .scroll-to-top {
   position: sticky;
-  display: inline-block;
-  bottom: 2.75rem;
-  margin-left: 100%;
-  transform: translateX(-50%);
+  bottom: 2.25rem;
+  float: right;
 
   &.hidden {
     display: none;
   }
 
   svg {
-    width: $new-padding;
-    height: $new-padding;
+    width: $scroll-to-top-size;
+    height: $scroll-to-top-size;
     stroke: $svg-color;
     stroke-width: 1;
     stroke-linecap: square;
