@@ -1,5 +1,6 @@
 .footer__wrapper {
   margin: 0 $scroll-to-top-size + 1rem;
+  font-size: 0.9rem;
   border-top: 1px solid #858585;
 }
 
@@ -45,11 +46,48 @@
   color: #858585;
 }
 
+.footer__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: none;
+  padding: 0 1.5rem 0 4px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:focus {
+    @include outline();
+  }
+}
+
+.footer__select-wrapper {
+  position: relative;
+  height: 1.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    width: 1rem;
+    height: 1rem;
+
+    background-image: url("../assets/angleDown.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    pointer-events: none;
+  }
+}
+
 .footer__additional {
   padding: 20px 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .footer__main-informations {
     display: flex;
     justify-content: space-between;
