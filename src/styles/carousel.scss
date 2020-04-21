@@ -1,0 +1,62 @@
+.main__carousel-wrapper {
+  padding: 3vw 10vw 5vw 10vw;
+  background-color: #263a49;
+}
+
+.main__carousel__card {
+  padding: 0 10px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  color: white;
+
+  img {
+    border-radius: 0;
+    opacity: 0.3;
+  }
+}
+
+.main__carousel__card-description {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  line-height: 1.25em;
+}
+
+.main__carousel__control-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 8vw;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
+}
+
+.main__carousel__control {
+  opacity: 0.5;
+  fill: #fff;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 578px) {
+  .main__carousel-wrapper {
+    padding: 3vw 3vw 2.5rem 3vw;
+  }
+
+  .main__carousel__control-wrapper {
+    display: none;
+  }
+}

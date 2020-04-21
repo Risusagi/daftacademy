@@ -114,7 +114,161 @@
 
     <!-- main -->
     <main>
-      <div class="container-fluid">
+      <div class="container-fluid p-0">
+        <div
+          id="carouselWithControls"
+          class="main__carousel-wrapper carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="main__carousel__card card col-4">
+                  <img
+                    class="card-img"
+                    src="https://picsum.photos/268/338"
+                    alt="Cabana oversized sunglasses"
+                  />
+                  <div
+                    class="main__carousel__card-description card-img-overlay d-flex flex-column justify-content-end"
+                  >
+                    <p class="card-text mb-2">Cabana oversized sunglasses</p>
+                    <p class="card-text price">$29.99</p>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="main__carousel__card card col-4">
+                  <img
+                    class="card-img"
+                    src="https://picsum.photos/268/338"
+                    alt="City backpack"
+                  />
+                  <div
+                    class="main__carousel__card-description card-img-overlay d-flex flex-column justify-content-end"
+                  >
+                    <p class="card-text mb-2">City backpack</p>
+                    <p class="card-text price">$49.99</p>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="main__carousel__card card col-4">
+                  <img
+                    class="card-img"
+                    src="https://picsum.photos/268/338"
+                    alt="Eye mash boat shoes"
+                  />
+                  <div
+                    class="main__carousel__card-description card-img-overlay d-flex flex-column justify-content-end"
+                  >
+                    <p class="card-text mb-2">Eye mash boat shoes</p>
+                    <p class="card-text price">$89.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="main__carousel__card card col-4">
+                  <img
+                    class="card-img"
+                    src="https://picsum.photos/268/338"
+                    alt="Tailored indigo jumpsuit"
+                  />
+                  <div
+                    class="main__carousel__card-description card-img-overlay d-flex flex-column justify-content-end"
+                  >
+                    <p class="card-text mb-2">Tailored indigo jumpsuit</p>
+                    <p class="card-text price">$49.99</p>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="main__carousel__card card col-4">
+                  <img
+                    class="card-img"
+                    src="https://picsum.photos/268/338"
+                    alt="Blue rain coat"
+                  />
+                  <div
+                    class="main__carousel__card-description card-img-overlay d-flex flex-column justify-content-end"
+                  >
+                    <p class="card-text mb-2">Blue rain coat</p>
+                    <p class="card-text price">$109.99</p>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="main__carousel__card card col-4">
+                  <img
+                    class="card-img"
+                    src="https://picsum.photos/268/338"
+                    alt="Red jacket"
+                  />
+                  <div
+                    class="main__carousel__card-description card-img-overlay d-flex flex-column justify-content-end"
+                  >
+                    <p class="card-text mb-2">Red jacket</p>
+                    <p class="card-text price">$69.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- carousel wrappers -->
+          <div
+            class="main__carousel__control-wrapper main__carousel__control-wrapper--left"
+          >
+            <a href="#carouselWithControls" role="button" data-slide="prev">
+              <svg
+                class="main__carousel__control"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 48V0h48v48H0zM46 2H2v44h44V2z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M31.887 23.743c0-.281-.099-.518-.297-.711-.198-.192-.432-.289-.703-.289H19.34l1.266-1.297c.198-.198.297-.432.297-.703 0-.271-.099-.505-.297-.703-.188-.198-.42-.297-.695-.297-.277 0-.514.099-.711.297l-2.985 2.984c-.198.198-.297.435-.297.711 0 .276.099.508.297.696l2.985 3c.104.093.216.164.336.211.119.046.247.07.382.07.125 0 .248-.024.368-.07.119-.047.231-.118.336-.211.197-.198.296-.435.296-.711 0-.276-.099-.508-.296-.696l-1.282-1.297h11.547c.271 0 .505-.096.703-.289.198-.192.297-.424.297-.695z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="main__carousel__control-wrapper main__carousel__control-wrapper--right"
+          >
+            <a href="#carouselWithControls" role="button" data-slide="next">
+              <svg
+                class="main__carousel__control"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 48V0h48v48H0zM46 2H2v44h44V2z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M31.614 24.415c.197-.198.297-.432.297-.703 0-.271-.1-.505-.297-.703l-3-3c-.198-.198-.433-.297-.703-.297-.271 0-.506.099-.704.297-.198.198-.296.432-.296.703 0 .271.098.505.296.703l1.297 1.297H16.911c-.303 0-.545.091-.727.273-.182.183-.273.425-.273.727s.091.544.273.726c.182.183.424.274.727.274h11.593l-1.297 1.297c-.198.198-.296.432-.296.703 0 .271.098.505.296.703.104.094.211.167.321.219.109.052.237.078.383.078.145 0 .273-.026.382-.078.11-.052.216-.125.321-.219l3-3z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!--  -->
         <div class="main-wrapper container">
           <!-- new arrivals -->
           <section class="new">
