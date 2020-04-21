@@ -56,10 +56,6 @@
   text-transform: uppercase;
 
   cursor: pointer;
-
-  &:focus {
-    @include outline();
-  }
 }
 
 .footer__select-wrapper {

@@ -1,5 +1,4 @@
 @import "./variables";
-@import "./common";
 @import "./menu";
 @import "./carousel";
 @import "./newArrivals";
@@ -23,6 +22,15 @@ body {
 
 svg {
   fill: $main-color;
+}
+
+a,
+input,
+select,
+button {
+  &:focus {
+    outline: 1px solid #555;
+  }
 }
 
 .main-wrapper {
