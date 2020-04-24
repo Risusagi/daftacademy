@@ -14,10 +14,20 @@ window.addEventListener("DOMContentLoaded", () => {
         : scrollToTopClasses.add("hidden");
     };
 
+    // set date of copyright
+    const handleCopyrightDate = () => {
+      const copyrightDate = document.querySelector(".copyright-date");
+
+      copyrightDate.textContent = new Date().getFullYear();
+    };
+
     return {
       handleScrollToTop,
+      handleCopyrightDate,
     };
   };
+
+  module().handleCopyrightDate();
 
   window.addEventListener("scroll", module().handleScrollToTop);
 });
