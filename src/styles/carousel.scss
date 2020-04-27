@@ -1,53 +1,64 @@
 .main__carousel-wrapper {
-  padding: 3vw 10vw 5vw 10vw;
+  position: relative;
+  padding: 3vw 5rem 5vw 5rem;
   background-color: #263a49;
 }
 
-.main__carousel__card {
-  padding: 0 10px;
-  border: none;
-  border-radius: 0;
-  background: none;
+.main__carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 3rem;
+
+  opacity: 0.5;
+  fill: #fff;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &--prev {
+    left: 1rem;
+  }
+
+  &--next {
+    right: 1rem;
+  }
+}
+
+.main__carousel-slider {
+  overflow: hidden;
+}
+
+.main__carousel-slides {
+  display: flex;
+
+  transition: transform 0.5s;
+}
+
+.main__carousel-card {
+  position: relative;
+
+  padding: 0 0.5rem;
   color: white;
 
   img {
-    border-radius: 0;
     opacity: 0.3;
   }
 }
 
-.main__carousel__card-description {
-  padding: 10px 20px;
+.main__carousel-card-description {
+  position: absolute;
+  bottom: 0;
+  padding: 0 0.5rem;
+
   font-size: 0.9rem;
   line-height: 1.25em;
-}
 
-.main__carousel__control-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 8vw;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-
-  &--left {
-    left: 0;
-  }
-
-  &--right {
-    right: 0;
-  }
-}
-
-.main__carousel__control {
-  opacity: 0.5;
-  fill: #fff;
-
-  &:hover {
-    opacity: 1;
+  p {
+    margin-bottom: 0.75rem;
   }
 }
 
@@ -56,7 +67,7 @@
     padding: 3vw 3vw 2.5rem 3vw;
   }
 
-  .main__carousel__control-wrapper {
+  .main__carousel-control {
     display: none;
   }
 }
