@@ -34,6 +34,7 @@
 
 .main__carousel-slides {
   display: flex;
+  justify-content: space-between;
 
   transition: transform 0.5s;
 }
@@ -41,6 +42,7 @@
 .main__carousel-card {
   position: relative;
 
+  margin: 0;
   padding: 0 0.5rem;
   color: white;
 
